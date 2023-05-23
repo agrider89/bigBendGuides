@@ -1,0 +1,526 @@
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+
+.section-title {
+    margin: 0;
+    font-size: 'Pacifico', cursive;
+    color: #f2bc52;
+    font-size: 5rem;
+}
+
+
+header {
+    background-image: url('./assets/3481-02.jpg');
+    display: flex;
+    height: 20vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-text {
+    font-size: 7rem;
+    padding-top: 50px;
+    font-weight: 300;
+    color: #f2bc52;
+    text-shadow: 1px 1px 5px #000;
+    opacity: 80%;
+    transform: rotate(-8deg);
+    margin-left: 100px;
+    font-family: 'Pacifico', cursive; 
+}
+
+.nav-bar {
+    margin-left: auto;
+    margin-top: 30px;
+    margin-right: 20px;
+    display: flex;
+    gap: 20px;
+    max-height: 25px; 
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: #2d5043;
+    font-family: 'Holtwood One SC', serif;
+    opacity: 70%; 
+    cursor: pointer;
+}
+
+.nav-bar a:hover {
+    transition: all 300ms ease-in-out;
+    letter-spacing: 0.05rem;
+}
+
+/* Mission */
+
+.mission {
+    background-image: url('assets/3481-14.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-img {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.mission-text {
+    font-family: 'Pacifico', cursive;
+    text-shadow: 1px 1px 5px #000; 
+    text-align: center;
+    width: 600px;
+    background-color: #2d5043;
+    opacity: 80%;
+    border-radius: 8px;
+    padding: 20px;
+}
+.mission-text h5 {
+    margin-top: 10px;
+    font-size: 1.75rem;
+    color: #f2bc52;
+    font-family: 'Holtwood One SC', serif;
+    text-shadow: 1px 1px 5px #000; 
+}
+
+/* Guides */
+
+.guides {
+    background-image: url('assets/3481-32.jpg');
+    padding: 20px;  
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.guides-text {
+    margin-inline: auto;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    text-shadow: 1px 1px 5px #000; 
+    margin-top: -100px;
+}
+.guides-wrapper {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.guide-cards {
+    transition: all 300ms ease-in-out;
+    position: absolute;
+    margin-top: -120px;
+    cursor: pointer;
+}
+
+.guide-cards img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: #000;
+}
+
+.guide-name {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background:#2d5043;
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Holtwood One SC', serif;
+    letter-spacing: 0.25rem;
+}
+
+
+
+.working {
+    transform: translateY(-10%);
+    z-index: 10;
+    opacity: 1;
+}
+
+.next {
+    transform: translateX(-50%);
+    opacity: 0.25;
+}
+
+.prev {
+    transform: translateX(50%);
+    opacity: 0.25;
+}
+
+.working:hover .guide-name  {
+    visibility: visible;
+    opacity: 80%;
+}
+
+.slide-controls {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.slide-controls button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #f2bc52;
+    font-size: 32px;
+    transition: all 0.3 ease-in-out;
+    opacity: 0.85;
+    background-color: #2d5043;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+
+
+/* Adventures */
+.adventures {
+    background-image: url('assets/3483-25.jpg');
+    padding: 20px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.adventures-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+    width: 800px;
+    height: max-content;
+    background-color: rgba(45, 80, 67, 0.8); 
+    margin: 20px auto;  
+    border-radius: 8px;
+}
+
+.adventures-text {
+    color: #f2bc52;
+    text-shadow: 1px 1px 5px #000; 
+    width: 500px;
+    text-align: center;   
+    margin: 0 auto;
+   
+}
+.adventures-text h5 {
+    font-size: 2rem;
+    margin: 5px auto;
+}
+
+.adventures-wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.adventure-card {
+    text-align: center;
+    width: 200px;
+    height: 300px;
+    background-color: #f2bc52;
+    padding: 10px;
+    border-radius: 8px;
+   
+}
+
+.adventure-img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.adventures-text {
+    font-family: 'Pacifico', cursive; 
+    text-shadow: 1px 1px 5px #000; 
+}
+
+.adventures a {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #f2bc52;
+    font-size: 32px;
+    transition: all 0.3 ease-in-out;
+    opacity: 0.85;
+    background-color: #2d5043;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Holtwood One SC', serif;
+    box-shadow: 0px 0px 0px 1px #f2bc52;
+    margin-top: 40px;
+    text-decoration: none;
+    padding: 8px;
+
+    
+}
+
+/* Footer */
+footer {
+    background-color: #2d5043;
+    height: 100vh;
+    padding: 50px;
+    gap: 4rem;
+}
+
+.footer-text{
+    text-align: center;
+    color: #f2bc52;
+    font-size: 4rem;
+    opacity: 0.8;
+    text-shadow: 1px 1px 3px #000;
+    font-family: 'Pacifico', cursive; 
+    margin-top: -20px;
+}
+.footer-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.address {
+    font-family: 'Holtwood One SC', serif;
+    color: #f2bc52;
+    text-shadow: 1px 1px 3px #000;
+    width: 300px;
+}
+
+.address h4 {
+    margin-top: 0;
+}
+
+.address h5 {
+    margin:5px 0;
+}
+
+.contact {
+    font-family: 'Holtwood One SC', serif;
+    color: #f2bc52;
+    text-shadow: 1px 1px 3px #000;
+}
+
+.socials {
+    display: flex;
+    gap: 30px;
+}
+
+.socials i {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* Modal Styles */
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 1rem;
+    visibility: hidden; 
+    opacity: 0;
+    z-index: 99;
+    background-color: rgb(45, 80, 67, 0.8);
+    display: grid;
+    place-content: center;
+}
+
+.active {
+    visibility: visible; 
+    opacity: 1;
+}
+
+
+.modal-outer {
+    width: 700px;
+    height: 450px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+.modal-body {
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    gap: 100px;
+}
+
+.modal-text {
+    width: 200px;
+    height: 300px;
+    font-family: 'Holtwood One SC', serif;
+    color: #2d5043;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.modal-body img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.modal-outer button {
+    color: #f2bc52;
+    background-color: #2d5043;
+    font-family: 'Holtwood One SC', serif;
+    width: 120px;
+    border-radius: 5px;
+    height: 40px;
+    margin-top: 50px;
+    margin-left: 300px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Your Trip Modal */
+
+.trip-body {
+    width: 700px;
+    height: 500px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.trip-text {
+    color: #f2bc52;
+    text-shadow: 1px 1px 3px #000;
+    font-family: 'Pacifico', cursive; 
+    font-size: 4rem;
+    transform: rotate(-8deg);
+    margin-top: -30px;
+    margin-left: 10px;
+    width: 300px;
+}
+
+.fa-solid.fa-x {
+    margin-left: 680px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+/* Adventures Page */
+
+.trail-container {
+    /* height: 60vh; */
+    background-color: #2d5043;
+    border: 5px solid #f2bc52;
+    color: #f2bc52;
+    padding: 20px;
+}
+
+.trail-header {
+    text-align: center;
+    font-family: 'Pacifico', cursive; 
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+}
+
+.trail-info {
+   display: grid;
+   align-items: center;
+   max-height: max-content;
+   gap: 20px;
+   padding: 20px;
+   margin: auto;
+}
+
+.info-wrapper {
+    border: 5px solid #f2bc52;
+    padding: 20px;
+    display: grid;
+    border-radius: 8px;
+}
+
+.trail-info-top, .trail-info-bottom {
+    display: flex;
+    align-items: center;
+}
+
+.trail-info-bottom {
+    margin-top: 40px;
+    justify-content: center;
+    gap: 150px;
+}
+
+
+.trail-title {
+   font-size: 2rem;
+   width: max-content;
+   position: relative;
+   display: block;
+   letter-spacing: 0.5rem;
+   font-family: 'Holtwood One SC', serif;
+}
+
+.fa-solid.fa-plus, .fa-solid.fa-x {
+    margin-left: auto;
+    font-size: 1.5rem; 
+}
+
+.content-img {
+    width: 350px;
+    height: auto;
+}
+
+.isOpen {
+    align-items: flex-start;
+    /* transition: all 4s ease-in-out;  */
+ 
+}
+
+.info-text h4 {
+    font-family: 'Holtwood One SC', serif;
+    letter-spacing: 0.2rem;
+}
+
+.info-button {
+    background-color: #2d5043;
+    border: 5px solid #f2bc52;
+    color: #f2bc52;
+    font-family: 'Holtwood One SC', serif;
+    width: 250px;
+    height: 40px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.info-button:active {
+    color: #2d5043;
+    background-color: #f2bc52;
+
+}
