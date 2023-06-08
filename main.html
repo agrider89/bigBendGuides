@@ -12,12 +12,13 @@
 </head>
 <body>
     <header class="bg-img">
-        <div class="hero-text">Big Bend Guides</div>
         <div class="nav-bar">
-            <a href="./main.html">Home</a>
-            <a href="./adventures.html">Adventures</a>
+            <a href="#guides">Guides</a>
+            <a href="#adventure-list">Adventures</a>
             <a data-open="yourTrip">Your Trips</a>
         </div>
+        <h1 class="hero-text">Big Bend Guides</h1>
+       
     </header>
 
     <section class="mission bg-img">
@@ -29,8 +30,23 @@
             on the adventure of your life! </h5>
      </div>
     </section>
+    
+    <section class="adventures bg-img">
+        <div class="adventures-container">
+            <div class="adventures-text">
+            <h2 class="section-title">Adventure Awaits</h2>
+            <h5>Our Guides are well versed in every terrain 
+                you will come across in Big Bend. 
+                All 800,000 acres of the park. We have broken up
+                our Adventures into three regions for your enjoyment.
 
-    <section class="guides bg-img">
+            </h5>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="guides" class="guides bg-img">
         <div class="guides-text">
             <h2 class="section-title">Meet Our Guides</h2>
             
@@ -59,79 +75,39 @@
         </div>
     </section>
 
-    <section class="adventures bg-img">
-        <div class="adventures-container">
-            <div class="adventures-text">
-            <h2 class="section-title">Adventures</h2>
-            <h5>Our Guides are well versed in every terrain 
-                you will come across in Big Bend. 
-                All 800,000 acres of the park. We have broken up
-                our Adventures into three regions for your enjoyment.
+  
 
-            </h5>
-            </div>
-            <!-- <div class="adventures-wrapper">
-                <div class="adventure-card">
-                    <h3>The River</h3>
-                    <img src="./assets/3482-30.jpg" alt="">
-                    <p>Explore the majestic Rio Grande. 
-                        Relax in the cool waters and look 
-                        on into Mexican.</p>
-                </div>
-
-                <div class="adventure-card">
-                    <h3>The Desert</h3>
-                    <img src="./assets/3481-32.jpg" alt="">
-                    <p>Explore the majestic Rio Grande. 
-                        Relax in the cool waters and look 
-                        on into Mexican.</p>
-                </div>
-
-                <div class="adventure-card">
-                    <h3>The Mountains</h3>
-                    <img src="./assets/3481-02.jpg" alt="">
-                    <p>Explore the majestic Rio Grande. 
-                        Relax in the cool waters and look 
-                        on into Mexican.</p>
-                </div>
-            </div> -->
-            <a href="./adventures.html">Full Adventure List</a>
+    <section id="adventure-list" class="trail-container bg-img">
+        <h2 class="trail-header">Adventure List</h2>
+        <div class="trail-info">
+            <!-- Dom Created HTML Elements -->
         </div>
     </section>
 
-    <footer>
-        <div class="footer-text">
-            <h2>Looking For More?</h2>
-        </div>
-        <div class="footer-info">
-            <div class="address">
-                <h3>Address</h3>
-                <h4>310, Alstate Ave, Big Bend National Park, TX 79834</h4>
-                <h5>Latitude 29° 19' 40.1772" N</h5>
-                <h5>Longitude 103° 12' 21.2004" W</h5>
-            </div>
-            <div class="contact">
-                <h3>Contact</h3>
-                <h4> Phone : (254)-893-1372</h4>
-                <h3>Email : guides@bigbend.com</h3>
-                <div class="socials">
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-youtube"></i>
-                </div>
-            </div>
-       </div>
-    </footer>
-
      <!-- Your Trip Modal -->
-     <div id="yourTrip" class="modal">
+     <div id="yourTrip" class="trip modal">
         <div class="trip-body">
             <i class="fa-solid fa-x" data-close></i>
             <h2 class="trip-text">Your Trip</h2>
-        <div class="your-guide">
-            <h2>Your Guide</h2>
+        <div class="your-choices">
+
+            <div class="your-guide">
+                <h2>Your Guide</h2>
+                
+            </div>
+    
+            <div class="your-date">
+                <h2>Start Date</h2>
+                <input type="date" value="">
+                <h2>End Date</h2>
+                <input type="date" value="">
+            </div>
+            <div class="your-trails">
+                <div class="trail-choice">Lost Mine</div>
+            </div>
+
         </div>
+      
         </div>
     </div>
     
@@ -150,7 +126,7 @@
                 </div>
                 
             </div>
-            <button>Book Guide</button>
+            <button data-close="">Book Guide</button>
         </div>
     </div>
 
@@ -190,10 +166,39 @@
         </div>
     </div>
 
+
+    
+    <footer>
+        <div class="footer-text">
+            <h2>Looking For More?</h2>
+        </div>
+        <div class="footer-info">
+            <div class="address">
+                <h3>Address</h3>
+                <h4>310, Alstate Ave, Big Bend National Park, TX 79834</h4>
+                <h5>Latitude 29° 19' 40.1772" N</h5>
+                <h5>Longitude 103° 12' 21.2004" W</h5>
+            </div>
+            <div class="contact">
+                <h3>Contact</h3>
+                <h4> Phone : (254)-893-1372</h4>
+                <h3>Email : guides@bigbend.com</h3>
+                <div class="socials">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+       </div>
+    </footer>
+
+    
+
    
 
     
-    <!-- <script src="./data.js"></script> -->
+    <script src="./data.js"></script>
     <script src="./main.js"></script>
     <script src="https://kit.fontawesome.com/1d7c7e0333.js" crossorigin="anonymous"></script>
 </body>

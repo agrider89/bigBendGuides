@@ -57,7 +57,7 @@ const createCards = () => {
         const xBtn = document.createElement('i')
 
         // Attributes
-        infoWrapper.setAttribute('class', 'info-wrapper')
+        infoWrapper.classList.add('info-wrapper', 'isClosed')
         infoTop.setAttribute('class', 'trail-info-top')
         title.setAttribute('class', 'trail-title');
         plusBtn.setAttribute('class', 'fa-solid fa-plus')
@@ -72,7 +72,7 @@ const createCards = () => {
         trail.append(infoWrapper) 
         
         plusBtn.addEventListener('click', function() {
-            infoWrapper.classList.add('isOpen')
+            // infoWrapper.classList.add('isOpen')
             plusBtn.remove();
             const xBtn = document.createElement('i')
             xBtn.setAttribute('class', 'fa-solid fa-x')
@@ -85,13 +85,13 @@ const createCards = () => {
     }
 }
 
-const expandInfo = (el , card, button, open,top ) => {
+const expandInfo = (el , card, button, open ,top ) => {
     const bottom = document.createElement('div')
     const img = document.createElement('img')
     const infoText = document.createElement('div')
     const infoButton = document.createElement('button')
 
-    bottom.setAttribute('class', 'trail-info-bottom')
+    bottom.classList.add('trail-info-bottom','faded-out')
     img.setAttribute('src', card.img)
     img.setAttribute('class', 'content-img')
     infoText.setAttribute('class','info-text')
@@ -99,7 +99,7 @@ const expandInfo = (el , card, button, open,top ) => {
 
     infoButton.textContent = 'Add To Your Trip'
 
-   
+    
     bottom.append(img)
     bottom.append(infoText)
     el.append(bottom)
@@ -107,9 +107,14 @@ const expandInfo = (el , card, button, open,top ) => {
     createText(card,infoText)
     infoText.append(infoButton)
     
+    requestAnimationFrame(() => {
+        bottom.classList.remove("faded-out")
+        el.classList.remove('isClosed')
+      })
     
 
     button.addEventListener('click', function() {
+        el.classList.add('isClosed')
         el.classList.remove('isOpen');  
         bottom.remove();
         button.remove()
@@ -135,4 +140,3 @@ const createText = (el,container) => {
 
 
 createCards();
-

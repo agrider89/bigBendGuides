@@ -44,7 +44,7 @@ const buttonOpen = document.querySelectorAll(openBtn)
 
 for(let button of buttonClose) {
     button.addEventListener('click', function() {
-        this.parentElement.parentElement.classList.remove('active');
+        this.parentElement.parentElement.classList.remove('active', 'animate');
         console.log(closeBtn)
     })
 }
@@ -52,6 +52,8 @@ for(let button of buttonClose) {
 for(let button of buttonOpen) {
     button.addEventListener('click', function() {
         const id = this.dataset.open;
-        document.getElementById(id).classList.add('active')
+        document.getElementById(id).classList.add('active', 'animate')
     })
 }
+
+console.log(buttonOpen)
